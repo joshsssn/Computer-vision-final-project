@@ -1,0 +1,39 @@
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Challenge data (distributed by the course, ~290 MB of images)
+train/
+test/
+
+# Resized RGBA memmaps (~5.6 GB), rebuilt by dataset.py
+outputs/cache/
+outputs/figures/
+outputs/log_*.txt
+# Model weights (~1.7 GB, hosted separately: see README) and per-epoch checkpoints.
+# Only the small LightGBM models used by predict.py are versioned.
+outputs/models/*
+!outputs/models/lgb_deploy_*
+*.pt
+*.tmp
+# Archive of the CNN weights to upload to Drive
+model_weights.zip
+
+# Kept on purpose: OOF / test probabilities (small), submissions, figures, logs,
+# results.jsonl, ablation.csv and the kNN feature parquets.
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# LaTeX build files
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.tex

@@ -1,0 +1,11 @@
+date,fichier,modele,oof_ou_val,lb
+2026-09-29,sub01_meta_baseline.csv (labels chiffres),meta_lgbm,0.9562,0.0000
+2026-09-29,sub02_meta_knn.csv,meta + kNN DINOv2 (LightGBM),0.9651,0.96618
+2026-09-29,sub03_cnxf0_metaknn.csv,0.7 ConvNeXt-t224 fold0 + 0.3 meta+kNN,0.9853 (val fold0),0.98380
+2026-09-29,sub04_cnxf0_only.csv,ConvNeXt-t224 fold0 seul,0.9828 (val fold0),0.98238
+2026-09-29,sub05_stack224_dino_clip.csv,stack LGBM: ConvNeXt-t224 (5 folds) + meta + kNN DINOv2 + CLIP,0.9834,0.98623
+2026-09-29,sub06_stack224_dino.csv,stack LGBM: ConvNeXt-t224 (5 folds) + meta + kNN DINOv2,0.9832,0.98582
+2026-09-29,sub07_stack224_visual.csv,stack LGBM visuel pur: ConvNeXt-t224 + stats pixels + kNN,0.9822,0.98582
+2026-10-05,final_A_no_pseudo.csv,VERSION A - stack LGBM: ConvNeXt-t224 + ConvNeXt-t160 + meta + kNN DINOv2/CLIP (sans pseudo-labels),0.9830,0.98663
+2026-10-05,final_B1_pseudo.csv,stack A + ConvNeXt-t224 pseudo-labels,0.9845 (optimiste),0.98643
+2026-10-05,final_B2_pseudo.csv,VERSION B - stack A + ConvNeXt-t224 PL + ConvNeXt-t160 PL,0.9847 (optimiste),0.98582

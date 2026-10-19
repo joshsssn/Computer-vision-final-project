@@ -1,0 +1,15 @@
+config,oof_acc,visual_only
+Métadonnées PNG + stats (LightGBM),0.9561696527988662,False
+Stats de pixels seules (LightGBM),0.9539427067516956,True
+kNN DINOv2/CLIP seul,0.8519080878631441,True
+Métadonnées + kNN,0.965684785909505,False
+CNN cnx_t224 (brut),0.9806660593177448,True
+CNN cnx_t160 (brut),0.9740864459965584,True
+Moyenne des CNN,0.9803623848567669,True
+Stack CNN (sans méta),0.9804636096770928,True
+Stack CNN + kNN (visuel pur),0.9826905557242636,True
+Stack CNN + stats pixels + kNN (visuel pur),0.9828930053649155,True
+Stack CNN + méta,0.981880757161656,False
+Stack CNN + méta + kNN (complet),0.9829942301852415,False
+stack_A + contrainte dure 0.75-0.93,,False
+stack_A + contrainte dure 0.8-0.9,,False

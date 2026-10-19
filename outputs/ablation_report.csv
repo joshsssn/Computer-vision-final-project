@@ -1,0 +1,14 @@
+config,oof_acc,group
+PNG metadata + image statistics (LightGBM),0.9562,metadata
+Pixel statistics only (LightGBM),0.9539,visual
+kNN on frozen DINOv2 + CLIP embeddings,0.8519,visual
+PNG metadata + kNN features,0.9657,metadata
+ConvNeXt-T 160 px,0.9741,visual
+ConvNeXt-T 224 px,0.9807,visual
+Stack: both CNNs,0.9805,visual
+Stack: both CNNs + kNN + pixel statistics,0.9829,visual
+Version A - stack: both CNNs + kNN + PNG metadata,0.9830,metadata
+ConvNeXt-T 160 px + pseudo-labels,0.9790,pseudo
+ConvNeXt-T 224 px + pseudo-labels,0.9821,pseudo
+Version B1 - stack A + pseudo-labelled 224 px CNN,0.9845,pseudo
+Version B2 - stack A + both pseudo-labelled CNNs,0.9847,pseudo

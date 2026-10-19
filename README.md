@@ -164,6 +164,5 @@ src/
 outputs/
   oof/ test_probs/   per-model probabilities (oof/parts/ holds per-fold files)
   submissions/       CSVs and leaderboard.csv
-  figures/           report figures
-report/              report.tex and report.pdf
+report/              report.pdf
 ```
